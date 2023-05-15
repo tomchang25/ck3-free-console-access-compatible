@@ -1,0 +1,25 @@
+﻿widget = {
+	# visible = "[And( Not( IsPauseMenuShown ), IsDefaultGUIMode )]"
+	size = { 100% 100% }
+	name = "FCAC_on_load"
+
+	layer = bottom
+
+	flowcontainer = {
+
+		name = "free_console_access_button"
+		spacing = 3
+		ignoreinvisible = yes
+		allow_outside = yes
+		
+		position = { 20 20 }
+		dockable_button = {
+			visible = "yes"
+			size = { 100 24 }
+			text = "Debug Mode"
+			onclick = "[ExecuteConsoleCommand('debug_mode')]"
+			tooltip = "Toggle debug_mode"
+			shortcut = "screenshot"
+		}
+	}
+}
